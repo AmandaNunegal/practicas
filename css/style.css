@@ -11,7 +11,7 @@
     color: #141414;
 }
 
-.mainInfoBar {   
+.mainInfoBar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,27 +24,30 @@
 .mainBar {
     display: flex;
     justify-content: space-between;
-    align-items: center;    
+    align-items: center;
     padding: 0.3em;
     box-shadow: 2px 2px 2px #dcdedf;
     height: 3em;
 }
 
 .icons1 {
-    display: flex;    
+    display: flex;
 }
 
 .icons2 {
     display: flex;
 }
 
-.menu, .search, .userSession, .cart {
+.menu,
+.search,
+.userSession,
+.cart {
     margin: 0.5em;
 }
 
 .logo {
-    font-weight: 600;   
-    font-size: 1.2em;  
+    font-weight: 600;
+    font-size: 1.2em;
 }
 
 .search {
@@ -65,10 +68,100 @@ input[type='search']:focus {
     outline: 0;
 }
 
+input[type='submit'] {
+    border: 1px solid gainsboro;
+    padding: 10px;
+    border-radius: 25px;
+}
+
 .container {
     margin: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+.news {
+    background-color: gray;
+}
+
+.advertising {
+    background-color: blue;
+}
+
+.recommendedByTopic {
+    background-color: green;
+}
+
+.opinions {
+    background-color: pink;
+}
+
+.impactPhrase {
+    background-color: yellow;
+}
+
+.editorials {
+    background-color: cyan;
+}
+
+.begin {
+    background-color: purple;
+}
+
+.phrase {
+    background-color: aquamarine;
+}
+
+.botonBegin {
+    background-color: yellowgreen;
+}
+
+.myFooter {
+    background-color: orange;
+}
+
+iframe {
+    width: 97.5%;
+    min-width: 15%; /* comprobar */
+    max-width: 97.5%;
+
+}
+
+.thematic {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.thematicTitle {
+    background-color: red;
+    width: 100%;
+}
+
+.thematicCards {
+    display: flex;
+    flex-direction: row;    
+    background-color: deeppink;
+}
+
+.thematicCard {
+    margin: 0 2em;;
+    background-color: pink;
+}
+
+.thematicImage {
+    background-color: green;
+}
+
+.thematicTopic {
+    background-color: blue;
+}
+
+.thematicMeaning {
+    background-color: aquamarine;
+}
+
+.thematicButton {
+    background-color: chartreuse;
 }
