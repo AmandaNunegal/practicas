@@ -11,6 +11,11 @@
     color: #141414;
 }
 
+.mainHeader {
+    position: sticky;
+    top: 0;
+}
+
 .mainInfoBar {
     display: flex;
     justify-content: center;
@@ -58,6 +63,9 @@
     border-radius: 25px;
 }
 
+.thematicImage img {
+    border-radius: 15px;    
+}
 
 input[type='search'] {
     border: 0;
@@ -69,9 +77,12 @@ input[type='search']:focus {
 }
 
 input[type='submit'] {
-    border: 1px solid gainsboro;
-    padding: 10px;
+    border: 1px solid #808080;
+    color: #3c3c3c;
+    padding: 0.8em 0;    
     border-radius: 25px;
+    width: 100%;
+    font-weight: 600;
 }
 
 .container {
@@ -121,47 +132,76 @@ input[type='submit'] {
     background-color: orange;
 }
 
-iframe {
-    width: 97.5%;
-    min-width: 15%; /* comprobar */
-    max-width: 97.5%;
-
-}
-
 .thematic {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: 2em;
 }
 
-.thematicTitle {
-    background-color: red;
+.thematicTitle {  
     width: 100%;
+    padding: 0.6em;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 
 .thematicCards {
     display: flex;
-    flex-direction: row;    
-    background-color: deeppink;
+    flex-direction: row;
+    
+    width: 100%;  
+  /*  height: fit-content;
+    white-space: nowrap;    */
+    overflow-x: scroll;
+    /*overflow-y: hidden;*/
+   /* -webkit-overflow-scrolling: touch;*/
+   height: 100%;
+    
 }
 
-.thematicCard {
-    margin: 0 2em;;
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.thematicCard {    
+    margin: 0 0.5em;
     background-color: pink;
+    height: 60%;
+  /*  float: none;
+    display: inline-block; */
 }
 
 .thematicImage {
-    background-color: green;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
 }
 
 .thematicTopic {
-    background-color: blue;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* background-color: #845a66;
+    color: #f2f2f2; */
+    font-size: 1em;  
+    font-weight: 600;      
+    padding: 0.6em 0.4em 0.6em 0;    
 }
 
 .thematicMeaning {
-    background-color: aquamarine;
+    display: flex;
+   /* background-color:#39474e;
+    color: #f2f2f2; */
+    padding: 0.4em 0.2em 0.4em 0;
+    font-size: 0.8em;
+
 }
 
 .thematicButton {
-    background-color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    padding: 0.8em 0;    
 }
