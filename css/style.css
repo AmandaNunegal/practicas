@@ -8,6 +8,8 @@ body {
     background-color: #f2f2f2;
 }
 
+
+
 .mainAll {
     font-family: Verdana, Helvetica, Arial;
     color: #141414;
@@ -18,6 +20,36 @@ body {
     top: 0;
 }
 
+/* @keyframes anim-infobar {
+    0% {
+        opacity: 75%;
+    }
+
+    75% {
+        opacity: 60%;
+    }
+
+    60% {
+        opacity: 50%;
+    }
+
+    50% {
+        opacity: 40%;
+    }
+
+    35% {
+        opacity: 35%;
+    }
+
+   25% {
+        opacity: 25%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+} */
+
 .mainInfoBar {
     display: flex;
     justify-content: center;
@@ -27,6 +59,19 @@ body {
     font-size: 0.6em;
     padding: 0.5em 0;
     height: 3em;
+    /* 
+    animation-name: anim-infobar;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    */
+   /* transition-property: opacity;
+    transition-duration: 3s;
+    transition: 
+    transition-delay: 2s; */
+}
+
+.mainInfoBar:hover{
+    opacity: 50%;
 }
 
 .mainBar {
@@ -125,10 +170,8 @@ input[type="submit"]:hover {
     border: 1px solid #141414;
     background-color: #141414;
     color: #f2f2f2;
-    border-radius: 25px;
-    font-weight: 600;
-    padding: 0.8em 1.2em;
 }
+
 
 .firstImpact {
     display: flex;
@@ -144,8 +187,8 @@ input[type="submit"]:hover {
     padding-top: 35%
 }
 
-
 .firstImpact input {
+    border-color: #b8abad;
     font-size: 1.2em;
     background-color: #b09196;
     color: #f2f2f2;
@@ -153,6 +196,7 @@ input[type="submit"]:hover {
 }
 
 .firstImpact input:hover {
+    border-color: #141414;
     background-color: #f2f2f2;
     color: #3c3c3c;
 }
@@ -170,16 +214,68 @@ input[type="submit"]:hover {
 
 .news {
     display: flex;
-    justify-content: space-evenly;
-    background-color: pink;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
-.advertising {
+.advertising, .recomendedByTopicGroup {
     display: flex;
-    flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
 }
+
+.advertisingElement, .recommendedByTopicElement{
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+    margin: 0 2em 0 0;
+    width: 21em;
+    border-radius: 25px;
+}
+
+
+.advertisingElement1 {
+    background-color: #dacdb9;
+}
+
+.advertisingElement2 {
+    background-color: #caa37dbf;
+}
+
+.advertisingElement3 {
+    background-color: #b57f48ce;
+}
+
+.advertisingElementTitle{
+    display: flex;  
+    justify-content: center;
+    align-items: start;
+    font-size: 1.7em;
+    font-weight: 600;
+    padding: 1em 0.2em 0 0.2em;
+}
+
+.advertisingElementText{
+    height: 9em;   
+    display: flex;  
+    justify-content: center;
+    align-items: center; 
+    padding: 2em;
+    text-align: justify;
+}
+
+.advertisingElement img {    
+    width: 21em;
+    border-radius: 0 0 25px 25px;
+}
+
+.recommendedByTopicElement img {
+    width: 21em;
+    border-radius: 25px;
+}
+
 
 .recommendedByTopic {}
 
@@ -219,7 +315,7 @@ input[type="submit"]:hover {
     flex-direction: row;
     width: 100%;
     /*  height: fit-content;
-    white-space: nowrap;    */
+    white-space: nowrap; */
     overflow-x: scroll;
     /*overflow-y: hidden;*/
     /* -webkit-overflow-scrolling: touch;*/
@@ -346,8 +442,8 @@ input[type="submit"]:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 2.7em;
-    font-size: 0.8em;
+    height: 3em;
+    font-size: 0.7em;
     background-color: rgb(97, 27, 129);
     color: #f2f2f2;
     padding: 0.4em;
@@ -359,6 +455,7 @@ input[type="submit"]:hover {
     flex-direction: column;
     align-items: center;
     background-color: rebeccapurple;
+    COLOR: #f2f2f2;
     padding: 2em;
     width: 100%;
     margin-bottom: 2em;
