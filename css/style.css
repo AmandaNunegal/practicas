@@ -64,13 +64,13 @@ body {
     animation-duration: 3s;
     animation-iteration-count: infinite;
     */
-   /* transition-property: opacity;
+    /* transition-property: opacity;
     transition-duration: 3s;
     transition: 
     transition-delay: 2s; */
 }
 
-.mainInfoBar:hover{
+.mainInfoBar:hover {
     opacity: 50%;
 }
 
@@ -217,24 +217,55 @@ input[type="submit"]:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 28em;
 }
 
-.advertising, .recomendedByTopicGroup {
+.newsElement {
+    display: flex;
+    justify-content: space-between;
+    color: #f2f2f2;
+    width: 100%;
+    height: 100%;
+    background-color: #141414;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+}
+
+.newsElementPublicidadIzda {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 26%;
+}
+
+.newsElementPublicidadCentro {
+    background-image: url("../images/novedades.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 48%;
+}
+
+.newsElementPublicidadDcha {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 26%;
+}
+
+.advertising {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
 }
 
-.advertisingElement, .recommendedByTopicElement{
-    display: flex;  
+.advertisingElement {
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0 2em 0 0;
     width: 21em;
     border-radius: 25px;
 }
-
 
 .advertisingElement1 {
     background-color: #dacdb9;
@@ -248,8 +279,8 @@ input[type="submit"]:hover {
     background-color: #b57f48ce;
 }
 
-.advertisingElementTitle{
-    display: flex;  
+.advertisingElementTitle {
+    display: flex;
     justify-content: center;
     align-items: start;
     font-size: 1.7em;
@@ -257,27 +288,29 @@ input[type="submit"]:hover {
     padding: 1em 0.2em 0 0.2em;
 }
 
-.advertisingElementText{
-    height: 9em;   
-    display: flex;  
+.advertisingElementText {
+    height: 9em;
+    display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     padding: 2em;
     text-align: justify;
 }
 
-.advertisingElement img {    
+.advertisingElement img {
     width: 21em;
     border-radius: 0 0 25px 25px;
 }
 
 .recommendedByTopicElement img {
     width: 21em;
-    border-radius: 25px;
+    height: 100%;
 }
 
 
-.recommendedByTopic {}
+
+
+
 
 .opinions {}
 
@@ -297,8 +330,8 @@ input[type="submit"]:hover {
 .recommendedByTopic {
     display: flex;
     flex-direction: column;
-    width: 100%;
     margin-top: 1.6em;
+    width: 100%;
 }
 
 .thematicTitle,
@@ -309,8 +342,7 @@ input[type="submit"]:hover {
     font-weight: 600;
 }
 
-.thematicCards,
-.recomendedByTopicGroup {
+.thematicCards, .recommendedByTopicGroup {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -319,20 +351,28 @@ input[type="submit"]:hover {
     overflow-x: scroll;
     /*overflow-y: hidden;*/
     /* -webkit-overflow-scrolling: touch;*/
-    height: 100%;
+    /* height: 100%; */
 }
 
 ::-webkit-scrollbar {
     display: none;
 }
 
-
-.thematicCard {
+.thematicCard, .recommendedByTopicElement {
     margin: 0 0.5em;
     height: 60%;
     background-color: #f2f2f2;
     /*  float: none;
     display: inline-block; */
+    width: 21em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recommendedByTopicElement {
+    height: 25em;
 }
 
 .thematicImage {
@@ -365,11 +405,81 @@ input[type="submit"]:hover {
     justify-content: center;
     align-items: center;
     padding: 0.8em 0;
+    width: 100%;
 }
 
 .recommendedByTopicElement {
-    margin: 0 1.5em;
+   border-radius: 25px;
+} 
+
+
+.recommendedByTopicGroup {
+    padding-bottom: 0.9em;
 }
+
+
+.recommendedByTopicElement input {
+    border: 0;
+    margin: 0.8em;
+    background-color: #141414;
+    color: #f2f2f2;
+    width: 14em;
+}
+
+.recommendedByTopicElement input:hover {
+    border: 0;
+    margin: 0 0.8em;
+    background-color: #f2f2f2;
+    color: #141414;
+}
+
+.recommendedByTopicElement1,
+.recommendedByTopicElement2,
+.recommendedByTopicElement3,
+.recommendedByTopicElement4,
+.recommendedByTopicElement5,
+.recommendedByTopicElement6 {
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 2em;
+}
+
+.recommendedByTopicElement1 {
+    background-image: url("../images/recomendaciones_inicial.png");
+}
+
+.recommendedByTopicElement2 {
+    background-image: url("../images/recomendaciones_fantasia.png");
+
+
+}
+
+.recommendedByTopicElement3 {
+    background-image: url("../images/recomendaciones_romantica.png");
+}
+
+.recommendedByTopicElement4 {
+    background-image: url("../images/recomendaciones_historica.png");
+}
+
+.recommendedByTopicElement5 {
+    background-image: url("../images/recomendaciones_terror.png");
+}
+
+.recommendedByTopicElement6 {
+    background-image: url("../images/recomendaciones_arte.png");
+}
+
+
+.recommendedByTopicElementText {
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    color: white;
+    font-size: 1.5em;
+    height: 6%;
+}
+
 
 .recommendedByTopicBottomGroup {
     display: flex;
@@ -396,8 +506,8 @@ input[type="submit"]:hover {
 }
 
 .opinionsElement {
-    min-height: 25em;
-    min-width: 29.5em;
+    height: 25em;
+    width: 100%;
     margin: 0 0.8em;
     background-color: chartreuse;
 }
