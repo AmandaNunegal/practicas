@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25em;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 30%;
+    border-radius: 15px;
+}
+
+.boton1 {
+    color: #f2f2f2;
+    padding: 1.5em;
+    border: 2px solid #f2f2f2;
+    border-radius: 15px;
+}

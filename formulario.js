@@ -1,5 +1,4 @@
 
-
 function agregarFila() {
 
     if (nombre !== "" && apellidos !== "") {
